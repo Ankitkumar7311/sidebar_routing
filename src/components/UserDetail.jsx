@@ -14,9 +14,9 @@ const UserDetail = () => {
   useEffect(() => {
     handleUser();
   }, [id]);
-
+ 
   if (!user) {
-    return <p className="p-6 text-lg">Loading...</p>;
+    return <div className="loader  m-[auto] mt-[30%]"></div>
   }
 
   return (

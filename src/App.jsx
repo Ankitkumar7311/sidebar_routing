@@ -3,10 +3,13 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import { ToastContainer } from 'react-toastify';
+
 
 const App = () => {
   return (
     <>
+    <ToastContainer/>
       {/* Top Navbar */}
       <Navbar />
 
