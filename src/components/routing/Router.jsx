@@ -5,9 +5,13 @@ import Users from '../Users';
 import ProductDetail from '../ProductDetail';
 import UserDetail from '../UserDetail';
 import Carts from '../Carts';
-import CartDetails from '../CartDetails';   // ✅ import added
+import CartDetails from '../CartDetails';   
 import Login from '../Login';
 import SignUp from '../SignUp';
+
+// ✅ New imports
+import Food from '../Food';
+import FoodDetails from '../FoodDetails';
 
 let routes = createBrowserRouter([
   {
@@ -35,7 +39,7 @@ let routes = createBrowserRouter([
         element: <Carts />,
       },
       {
-        path: '/carts/:id',          // ✅ new route added
+        path: '/carts/:id',          
         element: <CartDetails />,
       },
       {
@@ -45,6 +49,15 @@ let routes = createBrowserRouter([
       {
         path: '/signup',
         element: <SignUp />,
+      },
+      // ✅ Food routes
+      {
+        path: '/foods',
+        element: <Food />,
+      },
+      {
+        path: '/foods/:id',
+        element: <FoodDetails />,
       },
     ],
   },

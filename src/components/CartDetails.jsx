@@ -12,7 +12,7 @@ const CartDetails = () => {
       .catch(console.error);
   }, [id]);
 
-  if (!cart) return <p>Loading...</p>;
+  if (!cart) return  <div className="loader  m-[auto] mt-[30%]"></div>
 
   return (
     <section className="p-6">

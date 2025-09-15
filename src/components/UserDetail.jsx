@@ -16,7 +16,7 @@ const UserDetail = () => {
   }, [id]);
  
   if (!user) {
-    return <div className="loader  m-[auto] mt-[30%]"></div>
+    return  <div className="loader  m-[auto] mt-[30%]"></div>
   }
 
   return (

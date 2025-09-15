@@ -16,7 +16,7 @@ const ProductDetail = () => {
   }, [id]);
 
   if (!product) {
-    return <p className="p-6 text-lg">Loading...</p>;
+    return  <div className="loader  m-[auto] mt-[30%]"></div>
   }
 
   return (

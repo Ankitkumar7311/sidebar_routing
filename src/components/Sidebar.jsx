@@ -9,7 +9,6 @@ const Sidebar = () => {
                 Dashboard
             </div>
 
-
             <nav className="flex flex-col mt-6 space-y-2 px-4">
                 <NavLink
                     to="/users"
@@ -27,7 +26,17 @@ const Sidebar = () => {
                     to="/carts"
                     className="block px-4 py-2 rounded-lg hover:bg-gray-700 transition"
                 >
-                 Carts                </NavLink>
+                    Carts
+                </NavLink>
+
+                {/* ✅ Foods Route */}
+                <NavLink
+                    to="/foods"
+                    className="block px-4 py-2 rounded-lg hover:bg-gray-700 transition"
+                >
+                    Foods
+                </NavLink>
+
                 <NavLink
                     to="/login"
                     className="block px-4 py-2 rounded-lg hover:bg-gray-700 transition"
@@ -40,7 +49,6 @@ const Sidebar = () => {
                 >
                     Signup
                 </NavLink>
-
             </nav>
         </div>
     )
